@@ -61,3 +61,16 @@
 @media(prefers-reduced-motion:reduce){#map .gain{animation:none;opacity:.45}}
 
 .pending-swatch{display:inline-block;width:12px;height:12px;vertical-align:-1px;margin-right:4px;background:repeating-linear-gradient(135deg,#9c8f74 0 3px,#e0b876 3px 6px)}
+.entry-themes{display:flex;flex-wrap:wrap;gap:6px;margin:-4px 0 12px}.etag{font:inherit;font-size:13px;border:1px solid var(--c);color:var(--c);background:#fff;border-radius:12px;padding:2px 10px;cursor:pointer}.etag.none{border-color:var(--line);color:#75818b;cursor:default}
+.etag:hover,.etag:focus-visible{background:var(--c);color:#fff}
+.theme-card{margin-top:8px;padding:18px 0 22px;border-top:1px solid var(--line)}.theme-card h3{font-size:16px;margin:0 0 10px}
+.theme-chips{display:flex;flex-wrap:wrap;gap:8px}.theme-chips button{font:inherit;font-size:14px;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:16px;padding:5px 12px;cursor:pointer;min-height:34px}
+.theme-chips button i{width:9px;height:9px;border-radius:50%;background:var(--c,#999)}.theme-chips button span{font-size:12px;color:#75818b}
+.theme-chips button[aria-pressed="true"]{background:var(--c,var(--navy));border-color:var(--c,var(--navy));color:#fff}.theme-chips button[aria-pressed="true"] span{color:#fffc}.theme-chips button[aria-pressed="true"] i{background:#fff}
+.theme-nav{display:flex;justify-content:space-between;gap:10px;margin:12px 0 6px}.theme-nav button{font:inherit;font-size:14px;border:1px solid var(--navy);background:#fff;color:var(--navy);padding:6px 12px;cursor:pointer;min-height:36px}.theme-nav button:disabled{opacity:.4;cursor:default}
+.theme-thread{max-height:340px;overflow:auto;margin-top:8px}.th-hint,.th-desc{font-size:14px;color:#5d6873;margin:4px 0 8px}
+.th-list{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}.th-list li button{display:grid;grid-template-columns:96px minmax(0,1fr);gap:0 10px;width:100%;text-align:left;font:inherit;background:none;border:0;padding:7px 10px;cursor:pointer}
+.th-list li button:hover{background:#fff9}.th-list li.current button{background:#fff;box-shadow:inset 3px 0 0 var(--red)}
+.th-term{font-size:13px;color:var(--red);grid-row:span 2}.th-name{font-weight:650;font-size:15px}.th-why{font-size:13px;color:#5d6873;overflow-wrap:anywhere}
+#ruler.themed i{opacity:.25}#ruler.themed i.in-theme{opacity:1;background:var(--tc);height:18px}#ruler.themed i.current{opacity:1}
+@media(max-width:760px){.th-list li button{grid-template-columns:78px minmax(0,1fr)}.theme-thread{max-height:300px}.theme-chips button{font-size:13px;padding:5px 10px}}
